@@ -11,6 +11,7 @@ export const Wrapper = ({ children }: PropsType) => {
     <>
       <HeaderWrapper>
         <Header />
+        {children}
       </HeaderWrapper>
     </>
   );
