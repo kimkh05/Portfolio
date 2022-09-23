@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import main from "../../assets/img/main.svg";
 import Image from "next/image";
-import theme from "../../styles/theme";
 
 export const Header = () => {
   return (
@@ -15,7 +14,7 @@ export const Header = () => {
           <span>홈</span>
           <span>프로젝트</span>
           <span>
-            <a href="github.com/kimkh05">Github</a>
+            <a href="http://github.com/kimkh05">Github</a>
           </span>
         </div>
       </HeaderWrapper>
