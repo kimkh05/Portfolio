@@ -1,12 +1,14 @@
 interface DummyType {
+  id: number
   name: string;
   time: string;
   job: string[];
   introduce: string;
 }
 
-export const Project: DummyType[] = [
+export const ProjectDummy: DummyType[] = [
   {
+    id: 1,
     name: "DSM-MM",
     time: "2022.05.13 ~ ",
     job: ["Frontend", "Design"],
@@ -14,6 +16,7 @@ export const Project: DummyType[] = [
       "멘토링 사이트와 프로젝트 사이트를 함으로 많은 것을 배울 수 있습니다.",
   },
   {
+    id: 2,
     name: "Maradi",
     time: "2022.09.01 ~ ",
     job: ["Frontend", "Design"],
