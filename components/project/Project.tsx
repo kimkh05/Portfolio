@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import { Card } from "./Card";
 import { ProjectDummy } from "../../constance/Project";
-import theme from "../../styles/theme";
 
 export const Project = () => {
   return (
@@ -11,8 +10,8 @@ export const Project = () => {
           key={e.id}
           name={e.name}
           time={e.time}
-          job={e.job}
           introduce={e.introduce}
+          develop={e.develop}
         />
       ))}
     </Wrapper>
@@ -20,9 +19,13 @@ export const Project = () => {
 };
 
 const Wrapper = styled.div`
+  padding: 5vh 0 5vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: ${({theme}) => theme.color}
+  background-color: ${({ theme }) => theme.color};
+  & > div{
+    margin-bottom: 5vh;
+  }
 `;
