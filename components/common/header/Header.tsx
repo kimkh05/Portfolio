@@ -42,6 +42,9 @@ const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   border: 0.5px solid black;
+  position: fixed;
+  background: ${({theme}) => theme.color.white000};
+  z-index: 1;
   & > div {
     width: 15%;
     display: flex;
