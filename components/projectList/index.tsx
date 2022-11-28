@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { DummyType, ProjectDummy } from "../../constance/Project";
+import { DummyType, ProjectDummy } from "../../constance/project";
 
 export const ProjectList = () => {
   return (

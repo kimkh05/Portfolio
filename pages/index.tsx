@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Footer } from "../components/common/footer/Footer";
+import { Footer } from "../components/common/footer";
 import { Wrapper } from "../components/common/header/Wrapper";
-import { Introduce } from "../components/introduce/Introduce";
-import { ProjectList } from "../components/projectList/ProjectList";
+import { Introduce } from "../components/introduce";
+import { ProjectList } from "../components/projectList";
 
 const Home: NextPage = () => {
   return (
