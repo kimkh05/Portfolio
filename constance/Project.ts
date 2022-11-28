@@ -27,7 +27,7 @@ export const ProjectDummy: DummyType[] = [
   },
   {
     id: 3,
-    name: "Portfolio",
+    name: "KF",
     time: "2022.09.22 ~ ",
     introduce: "저의 스택들을 저만의 디자인으로 보여줄 수 있어요!",
     develop: ["React", "TypeScript", "NextJs", "Emotion"],
