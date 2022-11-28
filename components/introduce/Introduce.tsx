@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
-import introduce from "../assets/img/introduce.png";
+import { IntroduceImage } from "../../assets";
 
 export const Introduce = () => {
   return (
@@ -20,7 +20,7 @@ export const Introduce = () => {
             노력하고 있습니다.
           </span>
         </TextWrapper>
-        <Image src={introduce} alt="introduce" />
+        <Image src={IntroduceImage} alt="introduce" />
       </div>
     </Wrapper>
   );

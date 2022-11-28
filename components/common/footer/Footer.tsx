@@ -1,14 +1,13 @@
 import styled from "@emotion/styled";
-import main from "../../assets/img/main.svg";
 import Image from "next/image";
-import github from "../../assets/img/github.svg";
 import Link from "next/link";
+import { MainLogo, GithubLogo } from "../../../assets";
 
 export const Footer = () => {
   return (
     <Wrapper>
       <div>
-        <Image width={"50%"} src={main} alt="Logo" />
+        <Image width={"50%"} src={MainLogo} alt="Logo" />
       </div>
       <div>
         <div>
@@ -18,7 +17,7 @@ export const Footer = () => {
           <span>Email: nestjs05@gmail.com</span>
         </div>
         <Link href={"https://github.com/kimkh05/Portfolio"}>
-          <Image src={github} alt="깃허브 사진" />
+          <Image src={GithubLogo} alt="깃허브 사진" />
         </Link>
       </div>
     </Wrapper>
