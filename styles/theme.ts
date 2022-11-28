@@ -8,6 +8,7 @@ const theme = {
     white000: "#ffffff",
     white001: "#FDFDFD",
     gray001: "#999999",
+    gray002: "#D9D9D9",
   },
   font: {
     main: "Noto Sans",
