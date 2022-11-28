@@ -4,7 +4,7 @@ export interface DummyType {
   time: string;
   introduce: string;
   develop: string[];
-  job: string[] | string;
+  job: string[];
 }
 
 export const ProjectDummy: DummyType[] = [
@@ -23,7 +23,7 @@ export const ProjectDummy: DummyType[] = [
     time: "2022.09.01 ~ 2022.11.30",
     introduce: "프로젝트에 펀딩을 하여 다른사람에게 도움을 줄 수 있어요",
     develop: ["React", "TypeScript", "Styled-Component", "Axios", "Recoil"],
-    job: "Frontend",
+    job: ["Frontend"],
   },
   {
     id: 3,
@@ -54,6 +54,6 @@ export const ProjectDummy: DummyType[] = [
       "Axios",
       "React-Query",
     ],
-    job: "Frontend",
+    job: ["Frontend"],
   },
 ];
