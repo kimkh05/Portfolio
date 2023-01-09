@@ -2,11 +2,14 @@ import styled from "@emotion/styled";
 import { DummyType, ProjectDummy } from "../../constance/project";
 
 export const ProjectList = () => {
+  const gotoProjectOnClick = (id: number) => {
+    window.location.href = `/project/${id}`;
+  };
   return (
     <_Wrapper>
       <_ProjectList>
         {ProjectDummy.map((e: DummyType) => (
-          <_List key={e.id}>
+          <_List onClick={() => gotoProjectOnClick(e.id)} key={e.id}>
             <_ProjectTitle>{e.name}</_ProjectTitle>
             <_ListWrapper>
               <span>{e.introduce}</span>
