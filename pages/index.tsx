@@ -7,16 +7,14 @@ import { ProjectList } from "../components/projectList";
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Wrapper>
-        <Head>
-          <title>김경호의 포트폴리오</title>
-        </Head>
-        <Introduce />
-        <ProjectList />
-        <Footer />
-      </Wrapper>
-    </>
+    <Wrapper>
+      <Head>
+        <title>김경호의 포트폴리오</title>
+      </Head>
+      <Introduce />
+      <ProjectList />
+      <Footer />
+    </Wrapper>
   );
 };
 
