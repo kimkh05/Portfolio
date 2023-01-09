@@ -11,8 +11,8 @@ export const Footer = () => {
       </div>
       <div>
         <div>
-          <span>나의 포트폴리오</span>
-          <span>ⓒ Portfolio </span>
+          <span>김경호의 포트폴리오</span>
+          <span>ⓒ Portfolio_2022.</span>
           <span>전화번호 010-3312-5024</span>
           <span>Email: nestjs05@gmail.com</span>
         </div>
