@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
-import { IntroduceImage } from "../../assets";
+import { IntroduceImage, MoveScrollDown } from "../../assets";
 
 export const Introduce = () => {
   return (
@@ -22,15 +22,17 @@ export const Introduce = () => {
         </TextWrapper>
         <Image src={IntroduceImage} alt="introduce" />
       </div>
+      <Image src={MoveScrollDown} alt="아래로 이동" />
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   & > div {
     width: 70%;
     display: flex;
@@ -40,6 +42,9 @@ const Wrapper = styled.div`
     font-weight: bold;
     font-size: 48px;
     color: ${({ theme }) => theme.color.black000};
+  }
+  Image {
+    margin-top: 20%;
   }
 `;
 
