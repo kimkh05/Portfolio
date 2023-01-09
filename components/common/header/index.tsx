@@ -1,49 +1,31 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 import { MainLogo } from "../../../assets";
 
 export const Header = () => {
-  const [scrolly, setScrolly] = useState<number>(0);
-  const [button, setButton] = useState<boolean>(false);
-  const handleFollow = () => {
-    setScrolly(window.pageYOffset);
-  };
-  useEffect(() => {
-    const watch = () => {
-      window.addEventListener("scroll", handleFollow);
-    };
-    watch();
-  }, []);
   return (
-    <>
-      <HeaderWrapper>
-        <div>
-          <Image width={"70%"} className="main" src={MainLogo} alt="Logo" />
-          <span>김경호의 포트폴리오</span>
-        </div>
-        <div>
-          <span>
-            <Link href="/">홈</Link>
-          </span>
-          <span>프로젝트</span>
-          <span>
-            <a href="http://github.com/kimkh05">Github</a>
-          </span>
-        </div>
-      </HeaderWrapper>
-    </>
+    <HeaderWrapper>
+      <Link href="/">
+        <Image width={"70%"} className="main" src={MainLogo} alt="Logo" />
+      </Link>
+      <div>
+        <a href="/project">프로젝트</a>
+        <a href="http://github.com/kimkh05">Github</a>
+        <a>프로필</a>
+      </div>
+    </HeaderWrapper>
   );
 };
 
 const HeaderWrapper = styled.div`
   width: 100%;
+  height: 150px;
   display: flex;
   justify-content: space-around;
   border: 0.5px solid black;
   position: fixed;
-  background: ${({theme}) => theme.color.white000};
+  background: ${({ theme }) => theme.color.white000};
   z-index: 1;
   & > div {
     width: 15%;
@@ -51,7 +33,7 @@ const HeaderWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
   }
-  & > div > span {
+  & > div > a {
     cursor: pointer;
     :hover {
       text-decoration: underline;
