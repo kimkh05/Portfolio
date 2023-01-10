@@ -8,12 +8,10 @@ interface PropsType {
 
 export const Wrapper = ({ children }: PropsType) => {
   return (
-    <>
-      <HeaderWrapper>
-        <Header />
-        {children}
-      </HeaderWrapper>
-    </>
+    <HeaderWrapper>
+      <Header />
+      {children}
+    </HeaderWrapper>
   );
 };
 
