@@ -7,7 +7,9 @@ export const Header = () => {
   return (
     <HeaderWrapper>
       <Link href="/">
-        <Image width={"70%"} className="main" src={MainLogo} alt="Logo" />
+        <a>
+          <Image width={"70%"} className="main" src={MainLogo} alt="Logo" />
+        </a>
       </Link>
       <div>
         <a href="/project">프로젝트</a>

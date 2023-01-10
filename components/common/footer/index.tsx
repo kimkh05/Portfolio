@@ -17,7 +17,9 @@ export const Footer = () => {
           <span>Email: nestjs05@gmail.com</span>
         </div>
         <Link href={"https://github.com/kimkh05/Portfolio"}>
-          <Image src={GithubLogo} alt="깃허브 사진" />
+          <a>
+            <Image src={GithubLogo} alt="깃허브 사진" />
+          </a>
         </Link>
       </div>
     </Wrapper>
