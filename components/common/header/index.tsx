@@ -25,7 +25,7 @@ const HeaderWrapper = styled.div`
   height: 150px;
   display: flex;
   justify-content: space-around;
-  border: 0.5px solid black;
+  border: 1px solid #ededed;
   position: fixed;
   background: ${({ theme }) => theme.color.white000};
   z-index: 1;

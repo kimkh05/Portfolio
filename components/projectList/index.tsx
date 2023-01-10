@@ -117,6 +117,5 @@ const _Tag = styled.div`
   :hover {
     background: ${({ theme }) => theme.color.white001};
     color: ${({ theme }) => theme.color.black000};
-    border: 1px solid ${({ theme }) => theme.color.black000};
   }
 `;
