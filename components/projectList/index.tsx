@@ -15,8 +15,8 @@ export const ProjectList = () => {
               <span>{e.introduce}</span>
               <_TagWrapper>
                 <_SmallTitle>참여 분야</_SmallTitle>
-                {e.job.map((v: string) => (
-                  <_Tag>{v}</_Tag>
+                {e.job.map((v: string, idx: number) => (
+                  <_Tag key={idx}>{v}</_Tag>
                 ))}
               </_TagWrapper>
               <span>
@@ -25,8 +25,8 @@ export const ProjectList = () => {
               </span>
               <_TagWrapper>
                 <_SmallTitle>사용 기술</_SmallTitle>
-                {e.develop.map((v: string) => (
-                  <_Tag>{v}</_Tag>
+                {e.develop.map((v: string, idx: number) => (
+                  <_Tag key={idx}>{v}</_Tag>
                 ))}
               </_TagWrapper>
             </_ListWrapper>
